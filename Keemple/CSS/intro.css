@@ -1,0 +1,30 @@
+.intro{
+    position: relative;
+    padding: 50px 15%;
+    background: #111222;
+    height: 600px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .title{
+        color: #191930;
+        font-size: 100px;
+        font-weight: 800;
+        display: flex;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        pointer-events: none;
+    }
+
+    .text{
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        padding: 0 20px;
+        color: #fff;
+        height: 20px;
+        height: fit-content;
+        width: fit-content;
+    }
+}

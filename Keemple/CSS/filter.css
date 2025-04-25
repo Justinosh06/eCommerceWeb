@@ -1,0 +1,157 @@
+.filter{
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+
+    .chips{
+        margin-right: auto;
+        position: relative;
+
+        .check-ct{
+            display: none;
+        }
+
+        .label-ct{
+            padding: 10px 15px;
+            border: 1px solid #111;
+            border-radius: 50px;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .check-ct:checked + .label-ct{
+            background: #111;
+            color: #ececec;
+        }
+
+        .chip-btn{
+            max-width: 800px;
+            min-width: 200px;
+            display: flex;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            flex-wrap: wrap;
+        }
+
+        .icon{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 80px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .icon:first-child{
+            left: 0;
+            display: none;
+            background: linear-gradient(90deg, rgba(236, 236, 236, 1) 70%, transparent);
+        }
+        
+        .icon:last-child{
+            right: 0;
+            justify-content: flex-end;
+            background: linear-gradient(270deg, rgba(236, 236, 236, 1) 70%, transparent);
+        }
+
+        .icon i{
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: rgba(236, 236, 236, 1);
+            color: #666;
+            cursor: pointer;
+            font-size: 15px;
+            line-height: 40px;
+            border-radius: 50%;
+            transition: 0.3s ease-in-out;
+        }
+        
+        .icon i:hover{
+            background-color: #fff;
+        }
+        
+        .icon:first-child i{
+            margin-left: 10px;
+        }
+        
+        .icon:last-child i{
+            margin-right: 10px;
+        }
+    }
+
+    .search{
+        position: relative;
+
+        .icon{
+            position: absolute;
+            top: 13px;
+            left: 12px;
+        }
+
+        .searchbar{
+            padding: 10px 35px;
+            font-size: 12px;
+            border-radius: 100px;
+            border: 1px solid #111;
+        }
+    }
+
+    .sort{
+        width: 40px;
+        padding: 5px;
+        background: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        cursor: pointer;
+
+        .line{
+            transition: 0.3s ease-in-out;
+        }
+
+        .line:nth-child(1){
+            height: 4px;
+            width: 20px;
+            background: #111;
+            border-radius: 20px;
+            margin-bottom: 4px;
+        }
+
+        .line:nth-child(2){
+            height: 4px;
+            width: 12px;
+            background: #111;
+            border-radius: 20px;
+            margin-bottom: 4px;
+        }
+
+        .line:nth-child(3){
+            height: 4px;
+            width: 4px;
+            background: #111;
+            border-radius: 20px;
+            margin-bottom: 4px;
+        }
+    }
+
+    .sort:hover{
+        .line:nth-child(1){
+            width: 4px;
+        }
+
+        .line:nth-child(2){
+            width: 12px;
+        }
+
+        .line:nth-child(3){
+            width: 20px;
+        }
+    }
+}
