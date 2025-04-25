@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+
+        <!--Title-->
+        <title>Kimple • PRODUCTS</title>
+
+        <!--Fav Icon-->
+        <link rel="icon" type="image/png" href="../IMAGE/FavIcon.png">
+
+        <!--CSS Files-->
+        <link rel="stylesheet" href="../CSS/navbar.css">
+        <link rel="stylesheet" href="../CSS/cursor.css">
+        <link rel="stylesheet" href="../CSS/cart.css">
+        <link rel="stylesheet" href="../CSS/banner.css">
+        <link rel="stylesheet" href="../CSS/filter.css">
+        <link rel="stylesheet" href="../CSS/product.css">
+        <link rel="stylesheet" href="../CSS/footer.css">
+        
+        <script src="https://kit.fontawesome.com/f3ce044c74.js" crossorigin="anonymous"></script>
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="cursor">
+            <div class="cursor-ball cursor-ball--big ">
+                <svg height="30" width="30">
+                    <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+                </svg>
+            </div>
+            
+            <div class="cursor-ball cursor-ball--small">
+                <svg height="10" width="10">
+                    <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+                </svg>
+            </div>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <img src="../IMAGE/Logo-blk.svg" alt="logo" class="logo-img" id="logo-img">
+                <img src="../IMAGE/Logo.svg" alt="logo" class="logo-img" id="logo-blk" style="display: none;">
+            </div>
+
+            <ul class="btns" id="nav-btns">
+                <li class="Nav-li">
+                    <a href="../HTML/index.html#" class="btn hoverable">Home</a>
+                    <a href="../HTML/products.html#" class="btn hoverable">Products</a>
+                    <!--<button class="btn" onclick="toggleCart()">Cart</button>-->
+                </li>
+            </ul>
+
+            <button class="menu hoverable" id="menu" onclick="openNav()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </nav>
+
+        <div class="banner">
+            <div class="background">
+                <div class="line-top">
+                    <span>LIMITED TIME</span>
+                </div>
+
+                <div class="inner-background" id="inner-background">
+                    <video autoplay muted loop id="productVideo" class="productVideo">
+                        <source src="../VIDEO/Product-trailer.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="line-bottom">
+                    <span>WEEKEND SALE EVENT</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="products" id="products">
+            <div class="Ecobee-thermostat product-section">
+                <h1 class="bg-text">Ecobee</h1>
+
+                <div class="color"></div>
+
+                <img src="../IMAGE/Ecobee Smart Thermostat Premium.png" class="product-img">
+
+                <div class="text">
+                    <div class="top">
+                        <h5 class="name">Ecobee Smart Thermostat Premium</h5>
+                        <span class="price">$210.00</span>
+                    </div>
+                    <p class="description">Save up to 26% per year on heating and cooling costs. Included SmartSensor (50 dollar value) adjusts the temperature in the rooms that matter most to reduce hot or cold spots to keep you comfortable.</p>
+                </div>
+
+                <div class="buy-section">
+                    <button class="buy hoverable">buy now <i class="fa-solid fa-arrow-right-long"></i> </button>
+                    <div class="buy-line"></div>
+                </div>
+            </div>
+
+            <div class="Ecobee-thermostat product-section">
+                <h1 class="bg-text">BLUETTI</h1>
+
+                <div class="color"></div>
+
+                <div class="text">
+                    <h5 class="name">BLUETTI SP120 120W</h5>
+                    <p class="description">120-Watt monocrystalline solar panel with a high-efficiency solar cell of up to 23.5%</p>
+                </div>
+
+                <div class="buy-section">
+                    <button class="buy hoverable">buy now <i class="fa-solid fa-arrow-right-long"></i> </button>
+                    <div class="buy-line"></div>
+                </div>
+
+                <img src="../IMAGE/BLUETTI SP120 120W.png" class="product-img">
+            </div>
+
+            <div class="Nest-thermostat product-section">
+                <h1 class="bg-text">Google</h1>
+
+                <div class="color"></div>
+
+                <img src="../IMAGE/Nest Learning Thermostat - 3rd Generation.png" class="product-img">
+
+                <div class="text">
+                    <h5 class="name">Nest Learning Thermostat - 3rd Generation</h5>
+                    <p class="description">Programmable smart thermostat that learns your schedule and the temperatures you like and programs itself to help you save energy and stay comfortable</p>
+                </div>
+
+                <div class="buy-section">
+                    <button class="buy hoverable">buy now <i class="fa-solid fa-arrow-right-long"></i> </button>
+                    <div class="buy-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="main">
+            <div class="col-1">
+                <div class="logo-f">
+                    <img src="../IMAGE/Logo-slogan.svg" alt="logo-f" class="logo-img-f">
+                </div>
+
+                <div class="slogan">
+                    <p>"Preserving Our Planet, Securing Our Future: Together for Effective Climate Action."</p>
+                </div>
+
+                <div class="social">
+                    <li>
+                        <ul>
+                            <a href="" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class="social-icon"><i class="fa-brands fa-reddit"></i></a>
+                            <a href="" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="" class="social-icon"><i class="fa-solid fa-hand-holding-heart"></i></a>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="header">
+                    <h3>learn more</h3>
+                </div>
+
+                <ul>
+                    <li class="col-2-list">
+                        <a href='https://www.nrdc.org/stories/global-warming-101' class="learning">Natural Resources Defense Council</a>
+                        <a href="https://education.nationalgeographic.org/resource/global-warming/" class="learning">National Geography Society</a>
+                        <a href='https://climate.nasa.gov/what-is-climate-change/#:~:text=Global%20warming%20is%20the%20long,the%20term%20"climate%20change."' class="learning">Nasa</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </footer>
+
+        <div class="cr">
+            <p></p>
+        </div>
+
+    </body>
+
+    <script src="../JS/cursor.js" type="text/javascript"></script>
+    <script src="../JS/products.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+</html>

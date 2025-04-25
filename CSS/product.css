@@ -1,0 +1,95 @@
+:root{
+    --surface-color: #fef8f8;
+    --curve: 40;
+}
+
+.products{
+  background: #111222;
+}
+
+.product-section{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 50px 10%;
+  display: flex;
+
+  .product-img{
+    position: relative;
+    z-index: 1;
+  }
+
+  .bg-text{
+    font-size: 300px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #191930;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text{
+    z-index: 1;
+    position: relative;
+    max-width: 700px;
+
+    .top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .price{
+      font-weight: 700;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      color: rgba(255, 255, 255, 0.3);
+      padding: 5px;
+    }
+
+    .name{
+      font-size: 30px;
+      color: #ececec;
+    }
+
+    .description{
+      font-size: 16px;
+      color: #272a4f;
+      padding: 20px;
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .buy-section{
+    position: absolute;
+    bottom: calc(50px + 20px);
+    right: calc(10% + 50px);
+  }
+
+  .buy{
+    background: none;
+    color: #ececec;
+    border: none;
+    text-transform: capitalize;
+
+    .fa-arrow-right-long{
+      margin-left: 5px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .buy-line{
+    height: 2px;
+    width: 0;
+    transition: 0.4s ease-in-out;
+  }
+
+  .buy:hover ~ .buy-line{
+    background: #ececec;
+    width: 100%;
+  }
+}
